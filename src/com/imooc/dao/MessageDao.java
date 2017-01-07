@@ -18,7 +18,7 @@ public class MessageDao {
 	 * @author STAR
 	 * 根据查询条件查询消息列表
 	 *
-	 */ 
+	 */
 	public List<Message> queryMessageList(String command,String description){
 		DBAccess dbAccess = new DBAccess();
 		List<Message> messageList = new ArrayList<Message>();

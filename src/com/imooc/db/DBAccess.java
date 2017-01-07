@@ -9,7 +9,7 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 /**
- * @author STAR 
+ * @author STAR
  * 访问数据库类
  */
 public class DBAccess {
