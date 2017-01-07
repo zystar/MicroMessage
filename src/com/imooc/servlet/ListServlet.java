@@ -23,7 +23,7 @@ import com.imooc.service.ListService;
  *
  */
 @SuppressWarnings("serial")
-public class ListServlet extends HttpServlet {
+public class ListServlet extends HttpServlet { 
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
