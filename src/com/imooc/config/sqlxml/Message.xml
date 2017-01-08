@@ -30,13 +30,28 @@
   </resultMap>
 
   <select id="queryMessageList" parameterType="com.imooc.bean.Message" resultMap="MessageResult">
-   select ID,COMMAND,DESCRIPTION,CONTENT from MESSAGE where 1=1
-   <!-- 双引号转意：&quot;（带分好）		&&转意：&amp;&amp;或直接使用and关键字 -->
-   <if test="command != null and !&quot;&quot;.equals(command.trim())">
-   	and COMMAND=#{command}
-   </if>
-   <if test="description != null and !&quot;&quot;.equals(description.trim())">
-   	and DESCRIPTION like '%' #{description} '%'
-   </if>
+   select ID,COMMAND,DESCRIPTION,CONTENT from MESSAGE
+   <where>
+	   <!-- 双引号转意：&quot;（带分好）		&&转意：&amp;&amp;或直接使用and关键字 -->
+	   <if test="command != null and !&quot;&quot;.equals(command.trim())">
+	   	and COMMAND=#{command}
+	   </if>
+	   <if test="description != null and !&quot;&quot;.equals(description.trim())">
+	   	and DESCRIPTION like '%' #{description} '%'
+	   </if>
+   </where>
   </select>
+  
+  <delete id="deleteOne" parameterType="int">
+  	delete from MESSAGE where ID = #{_parameter}
+  </delete>
+  
+  <delete id="deleteBatch" parameterType="java.util.List">
+  	delete from MESSAGE where ID in(
+  		<foreach collection="list" item="item" separator=",">
+  			#{item}
+  		</foreach>
+  	)
+  </delete>
+  
 </mapper>
