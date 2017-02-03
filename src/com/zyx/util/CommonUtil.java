@@ -1,4 +1,4 @@
-package com.imooc.util;
+package com.zyx.util;
 
 /**
  * 共通的工具类

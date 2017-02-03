@@ -1,9 +1,9 @@
-package com.imooc.service;
+package com.zyx.service;
 
 import java.util.List;
 
-import com.imooc.bean.Message;
-import com.imooc.dao.MessageDao;
+import com.zyx.bean.Message;
+import com.zyx.dao.MessageDao;
 
 /**
  * @author STAR

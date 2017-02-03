@@ -22,14 +22,14 @@
 
 <mapper namespace="Message">
 
-  <resultMap type="com.imooc.bean.Message" id="MessageResult">
+  <resultMap type="com.zyx.bean.Message" id="MessageResult">
     <id column="ID" jdbcType="INTEGER" property="id"/>
     <result column="COMMAND" jdbcType="VARCHAR" property="command"/>
     <result column="DESCRIPTION" jdbcType="VARCHAR" property="description"/>
     <result column="CONTENT" jdbcType="VARCHAR" property="content"/>
   </resultMap>
 
-  <select id="queryMessageList" parameterType="com.imooc.bean.Message" resultMap="MessageResult">
+  <select id="queryMessageList" parameterType="com.zyx.bean.Message" resultMap="MessageResult">
    select ID,COMMAND,DESCRIPTION,CONTENT from MESSAGE
    <where>
 	   <!-- 双引号转意：&quot;（带分好）		&&转意：&amp;&amp;或直接使用and关键字 -->

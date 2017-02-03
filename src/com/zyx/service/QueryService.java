@@ -1,10 +1,10 @@
-package com.imooc.service;
+package com.zyx.service;
 
 import java.util.List;
 
-import com.imooc.bean.Message;
-import com.imooc.dao.MessageDao;
-import com.imooc.util.Iconst;
+import com.zyx.bean.Message;
+import com.zyx.dao.MessageDao;
+import com.zyx.util.Iconst;
 
 /**
  * 查询相关的业务功能

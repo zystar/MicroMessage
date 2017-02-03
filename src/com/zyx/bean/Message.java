@@ -1,4 +1,4 @@
-package com.imooc.bean;
+package com.zyx.bean;
 
 /**
  * @author STAR

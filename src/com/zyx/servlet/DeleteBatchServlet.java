@@ -1,4 +1,4 @@
-package com.imooc.servlet;
+package com.zyx.servlet;
 
 import java.io.IOException;
 
@@ -7,23 +7,27 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.zyx.service.MaintainService;
+
 /**
- * 对话页的初始化控制
+ * 批量删除控制层
  */
 @SuppressWarnings("serial")
-public class InitTalkServlet extends HttpServlet {
+public class DeleteBatchServlet extends HttpServlet{
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
-		// 设置编码
 		req.setCharacterEncoding("UTF-8");
-		// 向页面跳转
-		req.getRequestDispatcher("/WEB-INF/jsp/front/talk.jsp").forward(req, resp);
+		String[] ids = req.getParameterValues("id");
+		MaintainService maintainService = new MaintainService();
+		maintainService.deleteBatch(ids);
+		req.getRequestDispatcher("/List.action").forward(req, resp);
 	}
-	
+
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
+		// TODO Auto-generated method stub
 		this.doGet(req, resp);
 	}
 }

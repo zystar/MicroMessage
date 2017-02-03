@@ -1,4 +1,4 @@
-package com.imooc.dao;
+package com.zyx.dao;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -6,8 +6,8 @@ import java.util.List;
 
 import org.apache.ibatis.session.SqlSession;
 
-import com.imooc.bean.Message;
-import com.imooc.db.DBAccess;
+import com.zyx.bean.Message;
+import com.zyx.db.DBAccess;
 
 /**
  * 和message相关的数据库操作

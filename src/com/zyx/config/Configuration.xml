@@ -46,7 +46,7 @@
   </environments>
 
   <mappers>
-    <mapper resource="com/imooc/config/sqlxml/Message.xml"/>
+    <mapper resource="com/zyx/config/sqlxml/Message.xml"/>
   </mappers>
 
 </configuration>

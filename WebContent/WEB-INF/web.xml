@@ -12,7 +12,7 @@
   
   <servlet>
   	<servlet-name>ListServlet</servlet-name>
-  	<servlet-class>com.imooc.servlet.ListServlet</servlet-class>
+  	<servlet-class>com.zyx.servlet.ListServlet</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>ListServlet</servlet-name>
@@ -21,7 +21,7 @@
   
   <servlet>
   	<servlet-name>DeleteOneServlet</servlet-name>
-  	<servlet-class>com.imooc.servlet.DeleteOneServlet</servlet-class>
+  	<servlet-class>com.zyx.servlet.DeleteOneServlet</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>DeleteOneServlet</servlet-name>
@@ -30,7 +30,7 @@
   
   <servlet>
   	<servlet-name>DeleteBatchServlet</servlet-name>
-  	<servlet-class>com.imooc.servlet.DeleteBatchServlet</servlet-class>
+  	<servlet-class>com.zyx.servlet.DeleteBatchServlet</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>DeleteBatchServlet</servlet-name>
@@ -39,7 +39,7 @@
   
   <servlet>
   	<servlet-name>InitTalkServlet</servlet-name>
-  	<servlet-class>com.imooc.servlet.InitTalkServlet</servlet-class>
+  	<servlet-class>com.zyx.servlet.InitTalkServlet</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>InitTalkServlet</servlet-name>
@@ -48,7 +48,7 @@
   
   <servlet>
   	<servlet-name>AutoReplyServlet</servlet-name>
-  	<servlet-class>com.imooc.servlet.AutoReplyServlet</servlet-class>
+  	<servlet-class>com.zyx.servlet.AutoReplyServlet</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>AutoReplyServlet</servlet-name>

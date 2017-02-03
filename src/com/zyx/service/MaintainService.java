@@ -1,9 +1,9 @@
-package com.imooc.service;
+package com.zyx.service;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.imooc.dao.MessageDao;
+import com.zyx.dao.MessageDao;
 
 /**
  * 维护相关功能
